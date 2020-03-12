@@ -1,0 +1,214 @@
+% Copyright 2019 Matthew Felix Yuan
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Matthew Felix Yuan.
+%
+% This work consists of the files blank-template.tex and sample-resume.tex.
+
+
+
+\documentclass[10pt]{article}
+% helpful packages.
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{tabularx}
+% global formatting tweaks.
+\pagestyle{empty}
+\geometry{margin=0.5in}
+\setlength\parindent{9pt}
+\setlist{nosep}
+\renewcommand\labelitemi{--}
+% new commands!
+\newcommand{\name}[1]{\begin{center}\section*{\huge #1}\end{center}}
+\newcommand{\topinfo}[1]{\begin{center}\vspace{-0.2cm}#1\vspace{-0.2cm}\end{center}}
+\newcommand{\resumesection}[1]{\vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
+
+
+
+\begin{document}
+
+% \name is self-explanatory. \topinfo is for things like social media, email, phone number, address, etc.
+\name{Eric Altenburg}
+\topinfo{Hoboken, New Jersey, 07030}
+\topinfo{609.306.2359 $\vert$ ealtenbu@stevens.edu $\vert$ github.com/ericaltenburg}
+%\topinfo{github.com/ericaltenburg}
+
+% Objective section
+\resumesection{Objective}
+% things written after \hfill will be right-aligned, which is where i usually put dates.
+%To obtain a research opportunity or internship to gain experience in the field of computer science with an emphasis on database management systems, programming systems, or security.
+
+%To receive an opportunity to uses my technical skills and experiences from previous team-based projects to collaborate with others in an effort to produce a fully cohesive product aimed at solving real-world issues.
+
+Obtain an internship to gain experience in the field of computer science with an emphasis on security, machine learning, \par
+or systems programming. 
+
+%To obtain a position as a library assistant that will allow me to expand my capabilities with interacting among students\par
+%and faculty, while also allowing me to contribute to the Stevens Campus.
+
+% each \item is a point you want to say about the thing.
+
+
+% Education section
+\resumesection{Education}
+\textbf{Stevens Institute of Technology}, Hoboken, New Jersey \hfill Graduating - May 2021
+\begin{itemize}
+	\item Bachelors of Science in Computer Science
+	\item GPA: 3.80 $\vert$ Dean's List 2018 - Present
+	\item Coursework: Algorithms, Automata and Computation, Computer Organization and Programming, Data Structures, Database Management, Discrete Structures, Intermediate Statistics, Intro to Web Programming and Web Development, Systems Programming
+\end{itemize}
+
+\textbf{Mercer County Community College}, West Windsor Township, New Jersey \hfill Transferred - Aug 2018
+\begin{itemize}
+	\item Associates of Science in Computer Science
+	\item GPA: 3.96 $\vert$ President's List 2017 $\vert$ Dean's List 2018
+\end{itemize}
+
+
+% Skills Section
+\resumesection{Skills}
+\textbf{Languages} C/C++, CSS, HTML, Java, Javascript, LaTeX, OCaml, Python, R
+%\begin{itemize}
+%	\item C/C++, CSS, HTML, Java, Javascript, LaTeX, Python, R
+%\end{itemize}
+
+\textbf{Machine Learning} Classifier Decision Trees
+%\begin{itemize}
+%	\item Classifier Decision Trees
+%\end{itemize}
+
+\textbf{Operating Systems} Linux Ubuntu, Mac OSX, Windows
+%\begin{itemize}
+%	\item Linux Ubuntu, Mac OSX, Windows
+%\end{itemize}
+
+\textbf{Software} Eclipse IDE for Java Developers, g++, GitHub, IntelliJ IDEA
+%\begin{itemize}
+%	\item Eclipse IDE for Java Developers, g++, GitHub, IntelliJ IDEA
+%\end{itemize}
+%{\parindent0pt % disables indentation for all the text between { and }
+%	\begin{tabularx}{\textwidth}{
+% 	 >{\raggedright\arraybackslash}X 
+%  	 >{\raggedright\arraybackslash}X  }
+%		\textbf{Languages} & C/C++, CSS, HTML, Java, Javascript, LaTeX, Python, R\\
+%		\textbf{Machine Learning} & Classifier Decision Trees\\
+%		\textbf{Operating Systems} & Linux Ubuntu, Mac OSX, Windows\\
+%		\textbf{Software} & Eclipse IDE for Java Developers, g++, GitHub, IntelliJ IDEA
+%	\end{tabularx}
+%}
+
+
+% Activities Section
+%\resumesection{Activities}
+%Stevens Institute of Technology
+%\begin{itemize}
+%	\item Stevens Barbell Club, Phi Theta Kappa Honor Society
+%\end{itemize}
+%
+%Philly Codefest 2018
+%\begin{itemize}
+%	\item Built a model that helps future and current students better understand financial loans to help pay for college
+%	\item Received an honorable mention from Vanguard
+%\end{itemize}
+
+
+%% Interests Section
+%\resumesection{Interests}
+%Building Computers, Body Building, Bowling, Golf, Hackathons, Java Development, Playing Music, Powerlifting, Rubik's Cube, Video Games
+
+
+% Projects
+%\resumesection{Projects}
+%\textbf{GitHub:} https://github.com/ericaltenburg
+
+
+% Employment History
+\resumesection{Employment History}
+\textbf{S.C. Williams Library}, 1 Castle Point Terrace, Hoboken, NJ 07030 \hfill Nov 2018 - Present\par
+Library Assistant
+\begin{itemize}
+	\item Provided customer service by helping answer questions from students and members about printing, finding books, or computers
+	\item Upheld library standards by making sure furniture is well-kept throughout the building
+\end{itemize}
+
+\textbf{Stevens Institute of Technology, CS Dept.}, 1 Castle Point Terrace, Hoboken, NJ 07030 \hfill Aug 2019 - Dec 2019\par
+Algorithms Course Assistant
+\begin{itemize}
+	\item Reinforce understanding of course material to students by holding office hours, meeting with them individually, leading lab sessions, and occasionally holding lectures in the absence of the professor
+	\item Assist professor in grading assignments and exams
+\end{itemize}
+
+\textbf{Texas State University}, 601 University Dr, San Marcos, TX 78666 \hfill Jun 2019 - Aug 2019\par
+Undergraduate Research Assistant
+\begin{itemize}
+	\item Collaborated along-side a professor and another peer to produce a model capable of predicting drone battery consumption pre-flight
+	\item Built a classifier decision tree in Python designed to analyze raw flight data and produce a prediction for all the maneuvers it will perform during its flight
+	\item Compiled all findings during the project into an academic paper that was presented to other professors at a conference.
+\end{itemize}
+
+%\textbf{Dick's Sporting Goods}, 530 Nassau Park Blvd, Princeton, NJ 08540 \hfill August 2017 - June 2019\par
+%Sales Associate
+%\begin{itemize}
+%	\item Provided excellent customer service by supplying the necessary information to the customers in order for them to make a well-informed decision about their purchase
+%	\item Ensured the highest quality of safety was given to both customers and co-workers by following proper safety protocols
+%	\item Resolved and prevented customer conflicts by answering their questions or directing them to a co-worker who could
+%\end{itemize}
+%
+%\textbf{Hamilton Area YMCA}, 1315 Whitehorse Mercerville Rd, Hamilton Township, NJ 08619 \hfill June 2016 - August 2018\par
+%Lifeguard and Swim Instructor Aide
+%\begin{itemize}
+%	\item Ensured the safety of members in the community by making sure all rules were being followed
+%	\item Tutored members ages 1 - 15 on how to properly swim
+%\end{itemize}
+
+\resumesection{Projects}
+\textbf{Modified Euler 43} Stevens Institute of Technology \hfill Feb 2019\par
+\begin{itemize}
+	\item Solved a modified version of the Euler 43 where when given a pandigital number of varying length, will find all permutations deterministically in sub 3 ms
+\end{itemize}
+
+\textbf{Philly Codefest} Drexel University \hfill May 2019\par
+\begin{itemize}
+	\item Built a model that helps current and future students better understand financial loans used to help pay for college
+	\item Integrated an API from the Bureau of Labor Statistics in Java that allows one to view potential earnings in their respective field, then provides a breakdown for paying off a customized loan amount
+	\item Received an honorable mention from Vanguard
+\end{itemize}
+
+% \textbf{Weight Calculator} Personal \hfill Jan 2019\par
+% \begin{itemize}
+% 	\item Coded a calculator for displaying the amount and type of plates to add to a barbell for a specified weight using Java.
+% \end{itemize}
+
+\textbf{Stevens Music Website} Stevens Institute of Technology \hfill Sep 2018 - Nov 2018\par
+\begin{itemize}
+	\item Created a website using HTML, Javascript, and CSS with a group of 5 members to provide a list of upcoming events in Hoboken along with helping artists to promote and share their music.
+\end{itemize}
+
+
+%% fill your resume with sections!
+%\resumesection{Section}
+%\textbf{Thing}, other info \hfill Start Date--End Date
+%
+%\begin{itemize}
+%	\item Description of thing.
+%	\item More description of thing.
+%\end{itemize}
+%
+%\textbf{Thing}, other info \hfill Start Date--End Date
+%\begin{itemize}
+%	\item Description of thing.
+%	\item More description of thing.
+%\end{itemize}
+
+
+\end{document}
